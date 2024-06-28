@@ -4,33 +4,34 @@
     {
         private readonly Position[][] tiles = new Position[][]
         {
+            // 0
             new Position[] { 
                 new(0,0), 
                 new(1,0), 
                 new(1,1), 
                 new(1,2) 
-            }, // State 0 done 
-
+            },  
+            // 1
             new Position[] { 
                 new(0,1), 
                 new(0,2), 
                 new(1,1), 
                 new(2,1) 
-            }, // State 1 done
-            
+            }, 
+            // 2
             new Position[] { 
                 new(1,0), 
                 new(1,1), 
                 new(1,2), 
                 new(2,2) 
-            }, // State 2 done
-            
+            }, 
+            // 3
             new Position[] { 
                 new(0,1), 
                 new(1,1), 
                 new(2,0), 
                 new(2,1) 
-            }, // State 3 done 
+            },  
         };
 
         public override int Id => 2;
